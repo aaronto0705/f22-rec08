@@ -141,8 +141,8 @@ public class Main {
         // runWebAPIRequest();
         // Task 2
        runMultipleSynchronous();
-    //    runSingleAsync();
-       runMultipleAsynchronous();
+       runSingleAsync();
+    //    runMultipleAsynchronous();
         System.exit(0);
     }
 }
