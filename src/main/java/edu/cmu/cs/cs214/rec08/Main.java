@@ -133,7 +133,7 @@ public class Main {
         // runWebAPIRequest();
         // Task 2
        runMultipleSynchronous();
-       runSingleAsync();
+    //    runSingleAsync();
     //    runMultipleAsynchronous();
         System.exit(0);
     }
