@@ -27,7 +27,7 @@ public class Main {
     private static void runWebAPIRequest() throws IOException, InterruptedException {
         // read the request body
         String bodyStr = new String(Files.readAllBytes(Paths.get("src/main/resources/request-body.json")));
-        String key = ""; // TODO: fill in your key here
+        String key = "7221cf25f9434e09be5782435fcfeae6"; // TODO: fill in your key here
         HttpRequest request = HttpRequest.newBuilder(
                 URI.create("https://api.clarifai.com/v2/models/bd367be194cf45149e75f01d59f77ba7/outputs"))
             .header("Authorization", "Key " + key)
@@ -130,10 +130,10 @@ public class Main {
 
     public static void main(String[] args) throws IOException, InterruptedException, ExecutionException {
         // Task 1
-        runWebAPIRequest();
+        // runWebAPIRequest();
         // Task 2
-    //    runMultipleSynchronous();
-    //    runSingleAsync();
+       runMultipleSynchronous();
+       runSingleAsync();
     //    runMultipleAsynchronous();
         System.exit(0);
     }
